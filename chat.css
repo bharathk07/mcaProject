@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    color:white;
+    opacity: 1; /* Firefox */
+  }
+  
+body {
+    /* background-color: #6bdbfa00; */
+    background-color:teal;
+    /* background-image: url(images/background.jpg); */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    padding-bottom: 70px !important;
+    display: flex;  
+    flex-direction: column;  
+    overflow-y: scroll;  
+    scroll-behavior: smooth;
+}
+
+.botDiv{
+    display: flex;  
+    align-self: flex-start;
+}
+
+.userDiv{
+    display: flex;  
+    align-self: flex-end;
+}
+
+.message {
+    /* color: blueviolet; */
+    color: #f3f3f3;
+    display: flex;
+    max-width: 80%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.user-message {
+    background-color:dodgerblue;
+    /* background-color: #f2f2f2; */
+    border-radius: 15px 15px 1px 15px;
+}
+
+.user-img{
+    margin: 5px;
+    padding: 5px;
+    height:60px;
+    width:60px; 
+}
+
+.bot-message {
+    background-color:rgba(80, 86, 92, 0.537);
+    /* background-color: #f2f2f2;  */
+    border-radius: 15px 15px 15px 1px;
+}
+
+.bot-img
+{
+    margin: 5px;
+    padding: 5px;
+    height:60px;
+    width:60px;
+}
+
+
+.chat-form {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    /* background-color:rgba(80, 86, 92, 0.537); */
+     background-color:teal; 
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+    /*z-index: 1;*/ 
+}
+
+.chat-input {
+    color:white;
+    background-color:rgb(103, 102, 102);
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.chat-send {
+    /* background-color: #2D81D8; */
+    /* background-color:rgb(85, 10, 155); */
+    background-color:rgb(103, 102, 102);
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.loader {
+    display: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2D81D8;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

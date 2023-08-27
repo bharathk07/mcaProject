@@ -59,7 +59,7 @@
 /*** <End:monaca-cordova-loader LoadJs:"components/monaca-cordova-loader/cordova-loader.js"> ***/
 /*** <End:monaca-cordova-loader> ***/
 
-
+/* */
 
 /*** <Start:monaca-core-utils> ***/
 /*** <Start:monaca-core-utils LoadJs:"components/monaca-core-utils/monaca-core-utils.js"> ***/
